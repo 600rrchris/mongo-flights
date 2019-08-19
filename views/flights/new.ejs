@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-
+    <title>Mongoose Flights</title>
 </head>
 <body>
-    <h2>Enter a New Flight Here</h2>
-<form action="/flights" method="POST">
-    <label>Airline:
-      <input type="text" name="airline">
-    </label><br>
-    <label>Flight Number:
-      <input type="text" name="flightNo">
-    </label><br>
-    <label>Departs At:
-      <select name="departs">
-    </label><br>
-</form>
+    <h2>
+        Enter New Flight
+    </h2>
+    <form action="/flights" method="POST">
+        <label>Airline
+        <input type="text" name="airline">
+        </label>
+        <label>Flight Number
+            <input type="number" name="flightNo">
+        </label>
+        <label>Departure
+            <input type="date" name="departs">
+        </label>
+        <input type="submit" value="Add Flight" />
+        <label>Airport
+            <select name="airport">
+                <option value="AUS">Austin</option>
+                <option value="DAL">Dallas</option>
+                <option value="LAX">LAX</option>
+                <option value="SEA">Seattle</option>
+            </select>
+        </label>
+    </form>
 </body>
 </html>
